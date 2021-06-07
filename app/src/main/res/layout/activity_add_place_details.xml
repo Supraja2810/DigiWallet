@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".AddPlaceDetails">
+
+    <EditText
+        android:id="@+id/Textplace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/input_bg"
+        android:digits="_-0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:hint="Trip description"
+        android:inputType="textFilter|textMultiLine"
+        android:maxLength="12"
+        android:padding="15dp"
+        android:textColorHint="@color/black" />
+
+    <EditText
+        android:id="@+id/editno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Textplace"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/input_bg"
+        android:hint="No of participants"
+        android:inputType="number"
+        android:maxLength="2"
+        android:padding="15dp"
+        android:textColorHint="@color/black" />
+
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/editno"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/daye"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editno"
+            android:text="Select date"
+            android:textColor="@color/black"
+            android:textSize="22dp" />
+
+        <Button
+            android:id="@+id/daypickbut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/input_btn"
+            android:text="Date" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/linear"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/friend_name"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_bg"
+            android:digits="_-0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:hint="Participant name"
+            android:inputType="textFilter|textMultiLine"
+            android:maxLength="12"
+            android:padding="15dp"
+            android:textColorHint="@color/black" />
+
+        <Button
+            android:id="@+id/add_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/input_btn"
+            android:text="ADD"
+            android:textColor="#ffffff"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_SUBMIT"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="42dp"
+        android:background="@drawable/input_btn"
+        android:text="SUBMIT"
+        android:textColor="#FFFFFF"
+        android:textSize="23sp" />
+
+</RelativeLayout>
