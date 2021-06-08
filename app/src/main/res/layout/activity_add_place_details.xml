@@ -11,15 +11,10 @@
         android:id="@+id/Textplace"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
         android:layout_marginTop="20dp"
         android:background="@drawable/input_bg"
-        android:digits="_-0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
         android:hint="Trip description"
-        android:inputType="textFilter|textMultiLine"
-        android:maxLength="12"
+        android:inputType="text"
         android:padding="15dp"
         android:textColorHint="@color/black" />
 
@@ -28,13 +23,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/Textplace"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
         android:layout_marginTop="52dp"
         android:background="@drawable/input_bg"
         android:hint="No of participants"
         android:inputType="number"
-        android:maxLength="2"
         android:padding="15dp"
         android:textColorHint="@color/black" />
 
@@ -54,6 +46,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/editno"
             android:text="Select date"
+            android:padding="15dp"
             android:textColor="@color/black"
             android:textSize="22dp" />
 
@@ -80,10 +73,8 @@
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:background="@drawable/input_bg"
-            android:digits="_-0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
             android:hint="Participant name"
-            android:inputType="textFilter|textMultiLine"
-            android:maxLength="12"
+            android:inputType="text"
             android:padding="15dp"
             android:textColorHint="@color/black" />
 

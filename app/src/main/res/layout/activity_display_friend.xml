@@ -1,9 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DisplayFriend">
+    android:background="#FFFFFF"
+    android:padding="20dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <EditText
+        android:id="@+id/addname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/input_bg"
+        android:hint="Add friend"
+        android:inputType="text"
+        android:padding="15dp"
+        android:textColorHint="@color/black" />
+
+    <ImageButton
+        android:id="@+id/myF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_btn"
+        android:src="@android:drawable/ic_input_add"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:text="Button" />
+
+    <ListView
+        android:id="@+id/list_friend"
+        android:layout_below="@+id/addname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+</RelativeLayout>
